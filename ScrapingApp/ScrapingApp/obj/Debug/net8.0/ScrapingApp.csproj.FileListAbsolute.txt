@@ -38,3 +38,44 @@ D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\P
 D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\Prueba tal\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.pdb
 D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\Prueba tal\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.genruntimeconfig.cache
 D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\Prueba tal\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ref\ScrapingApp.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapingApp.exe
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapingApp.deps.json
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapingApp.runtimeconfig.json
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapingApp.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapingApp.pdb
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\FSharp.Core.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\HtmlAgilityPack.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapySharp.Core.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ScrapySharp.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\System.Xml.XPath.XmlDocument.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\cs\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\de\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\en\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\es\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\fr\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\it\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ja\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ko\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\pl\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\pt-BR\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\ru\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\tr\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\zh-Hans\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\zh-Hant\FSharp.Core.resources.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.csproj.AssemblyReference.cache
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.AssemblyInfoInputs.cache
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.AssemblyInfo.cs
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.csproj.CoreCompileInputs.cache
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.sourcelink.json
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\Scraping.4434538D.Up2Date
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\refint\ScrapingApp.dll
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.pdb
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ScrapingApp.genruntimeconfig.cache
+D:\Tec\Materias\2025\tercer_semestre\Arquitectura_de_computadores\The_last_ONE\proyecto\proyecto_Multicore\ScrapingApp\ScrapingApp\obj\Debug\net8.0\ref\ScrapingApp.dll

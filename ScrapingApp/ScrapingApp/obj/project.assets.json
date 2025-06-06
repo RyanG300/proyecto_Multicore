@@ -3732,11 +3732,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\ScrapingApp.csproj",
+      "projectUniqueName": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\ScrapingApp.csproj",
       "projectName": "ScrapingApp",
-      "projectPath": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\ScrapingApp.csproj",
+      "projectPath": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\ScrapingApp.csproj",
       "packagesPath": "C:\\Users\\Extremetech SC\\.nuget\\packages\\",
-      "outputPath": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\obj\\",
+      "outputPath": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\",
+  "WorkspaceRootPath": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B108DFE8-6842-42AE-9A46-336F25BBBB81}|ScrapingApp\\ScrapingApp.csproj|d:\\tec\\materias\\2025\\tercer_semestre\\arquitectura_de_computadores\\the_last_one\\prueba tal\\scrapingapp\\scrapingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B108DFE8-6842-42AE-9A46-336F25BBBB81}|ScrapingApp\\ScrapingApp.csproj|d:\\tec\\materias\\2025\\tercer_semestre\\arquitectura_de_computadores\\the_last_one\\proyecto\\proyecto_multicore\\scrapingapp\\scrapingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B108DFE8-6842-42AE-9A46-336F25BBBB81}|ScrapingApp\\ScrapingApp.csproj|solutionrelative:scrapingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B108DFE8-6842-42AE-9A46-336F25BBBB81}|ScrapingApp\\ScrapingApp.csproj|d:\\tec\\materias\\2025\\tercer_semestre\\arquitectura_de_computadores\\the_last_one\\prueba tal\\scrapingapp\\scrapingapp\\webscraping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B108DFE8-6842-42AE-9A46-336F25BBBB81}|ScrapingApp\\ScrapingApp.csproj|d:\\tec\\materias\\2025\\tercer_semestre\\arquitectura_de_computadores\\the_last_one\\proyecto\\proyecto_multicore\\scrapingapp\\scrapingapp\\webscraping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B108DFE8-6842-42AE-9A46-336F25BBBB81}|ScrapingApp\\ScrapingApp.csproj|solutionrelative:scrapingapp\\webscraping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "WebScraping.cs",
-              "DocumentMoniker": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\WebScraping.cs",
+              "DocumentMoniker": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\WebScraping.cs",
               "RelativeDocumentMoniker": "ScrapingApp\\WebScraping.cs",
-              "ToolTip": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\WebScraping.cs",
+              "ToolTip": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\WebScraping.cs",
               "RelativeToolTip": "ScrapingApp\\WebScraping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANgBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4BAAAAAAAAAAApwKQBAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T18:46:50.771Z",
               "EditorCaption": ""
@@ -37,11 +37,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\Program.cs",
+              "DocumentMoniker": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\Program.cs",
               "RelativeDocumentMoniker": "ScrapingApp\\Program.cs",
-              "ToolTip": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\Prueba tal\\ScrapingApp\\ScrapingApp\\Program.cs",
-              "RelativeToolTip": "ScrapingApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\Tec\\Materias\\2025\\tercer_semestre\\Arquitectura_de_computadores\\The_last_ONE\\proyecto\\proyecto_Multicore\\ScrapingApp\\ScrapingApp\\Program.cs*",
+              "RelativeToolTip": "ScrapingApp\\Program.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T18:44:37.136Z",
               "EditorCaption": ""

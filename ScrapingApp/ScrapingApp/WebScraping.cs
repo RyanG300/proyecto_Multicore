@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Xml.Linq;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Threading.Tasks;
+using System.Threading;
+
 
 namespace lastOne
 {
@@ -96,10 +99,11 @@ namespace lastOne
         //List<string> moviesNames = new List<string>();
         public List<datosMoviesAndSeries> movies = new List<datosMoviesAndSeries>();
         public List<datosMoviesAndSeries> series = new List<datosMoviesAndSeries>();
+        public int finalPage=1;
 
         public WebScraping()
         {
-            metaCriticScraping(55, 55, urlMovies);
+            ejecutar(5);
             //metaCriticScraping(4,4, urlSeries);
             /*foreach(var item in movies)
             {
@@ -107,7 +111,22 @@ namespace lastOne
             }*/
         }
 
-        public void metaCriticScraping(int page, int limite, string trueUrl)
+        
+        public void ejecutar(int catidadPage)
+        {
+            //catidadPage -> 24 pelis/series por pagina
+            Thread thread1 = new Thread(() => metaCriticScraping(finalPage, finalPage + catidadPage, urlMovies));
+            Thread Thread2 = new Thread(() => metaCriticScraping(finalPage, finalPage + catidadPage, urlSeries));
+            thread1.Start(); Thread2.Start();
+            thread1.Join(); Thread2.Join(); // Espera a que ambos hilos terminen
+            finalPage = catidadPage;
+            Console.WriteLine("Total movies: " + movies.Count);
+            Console.WriteLine("Total series: " + series.Count);
+        }
+
+
+
+        private void metaCriticScraping(int page, int limite, string trueUrl)
         {
 
             while (page <= limite)
@@ -185,7 +204,7 @@ namespace lastOne
                                 }
                                 try
                                 {
-                                    Console.WriteLine("Nombre: " + movieName + "\n" + "Fecha: " + movieDate + "\n" + "Sipnosis: " + movieSipnosis + "\n" + "CriticaScore: " + metaScore + "\n" + "UserScore: " + userScore + "\n" + "Director: " + director + "\n" + "Escritor: " + writer + "\n" + "Genero: " + string.Join(",", genre) + "\n" + "Actores: " + cast[0].name + "\n" + "Temporadas: " + temporadas.Count + "\n"); //+userScore);
+                                    //Console.WriteLine("Nombre: " + movieName + "\n" + "Fecha: " + movieDate + "\n" + "Sipnosis: " + movieSipnosis + "\n" + "CriticaScore: " + metaScore + "\n" + "UserScore: " + userScore + "\n" + "Director: " + director + "\n" + "Escritor: " + writer + "\n" + "Genero: " + string.Join(",", genre) + "\n" + "Actores: " + cast[0].name + "\n" + "Temporadas: " + temporadas.Count + "\n"); //+userScore);
                                     //Console.WriteLine(movieName + "\n" + movieDate + "\n" + movieSipnosis + "\n" + metaScore + "\n" + userScore + "\n" + director + "\n" + writer + "\n" + String.Join(",", genre) + "\n" + cast[0].name + "\n" + "Temporadas: " + temporadas.Count + "\n"); //+userScore);
                                     metaCriticOrRottenData metaCriticData = new metaCriticOrRottenData(metaScore, userScore);
                                     datosMoviesAndSeries movie = new datosMoviesAndSeries(movieName, movieDate, genre, director, writer, cast, movieSipnosis);
@@ -227,7 +246,7 @@ namespace lastOne
                                     cast.Add(castInfo);
                                 }
 
-                                Console.WriteLine("Nombre: " + movieName + "\n" + "Fecha: " + movieDate + "\n" + "Sipnosis: " + movieSipnosis + "\n" + "CriticaScore: " + metaScore + "\n" + "UserScore: " + userScore + "\n" + "Director: " + director + "\n" + "Escritor: " + writer + "\n" + "Genero: " + string.Join(",", genre) + "\n" + "Actores: " + cast[0].name + "\n"); //+userScore);
+                                //Console.WriteLine("Nombre: " + movieName + "\n" + "Fecha: " + movieDate + "\n" + "Sipnosis: " + movieSipnosis + "\n" + "CriticaScore: " + metaScore + "\n" + "UserScore: " + userScore + "\n" + "Director: " + director + "\n" + "Escritor: " + writer + "\n" + "Genero: " + string.Join(",", genre) + "\n" + "Actores: " + cast[0].name + "\n"); //+userScore);
                                 metaCriticOrRottenData metaCriticData = new metaCriticOrRottenData(metaScore, userScore);
                                 datosMoviesAndSeries movie = new datosMoviesAndSeries(movieName, movieDate, genre, director, writer, cast, movieSipnosis);
                                 movie.metaCritic = metaCriticData;
@@ -248,7 +267,7 @@ namespace lastOne
                         }
 
                     }
-                    Console.WriteLine("Total movies: " + movies.Count);
+                    //Console.WriteLine("Total movies: " + movies.Count);
                 }
                 catch (Exception ex)
                 {
@@ -258,7 +277,7 @@ namespace lastOne
             }
         }
 
-        public void rottenTomatoesScraping(string movieToSearch, string date, bool peliOSerie, int index)
+        private void rottenTomatoesScraping(string movieToSearch, string date, bool peliOSerie, int index)
         {
             HtmlWeb web = new HtmlWeb();
             //Console.WriteLine("https://www.rottentomatoes.com/search?search=" + movieToSearch.Replace(" ", "%20"));
@@ -294,14 +313,14 @@ namespace lastOne
                         series[index].RottenTomatoes = rottenData;
                         series[index].photoMovie = moviePhoto; // Adding photo to the movie object
                     }
-                    Console.WriteLine("RottenTomatoes: " + metaScore + ", " + userScoreText + "\n");
+                    //Console.WriteLine("RottenTomatoes: " + metaScore + ", " + userScoreText + "\n");
                     return;
 
                 }
             }
         }
 
-        public void whereToWatchScraping(string movieToSearch, string date, bool peliOSerie, int index)
+        private void whereToWatchScraping(string movieToSearch, string date, bool peliOSerie, int index)
         {
             HtmlWeb web = new HtmlWeb();
             HtmlDocument doc = web.Load("https://www.justwatch.com/cr/buscar?q=" + movieToSearch.Replace(" ", "%20"));
@@ -309,8 +328,8 @@ namespace lastOne
             string newDate = string.Concat("(", date[date.Length - 4], date[date.Length - 3], date[date.Length - 2], date[date.Length - 1], ")");
             foreach (var node in htmlNode.CssSelect(".title-list-row__row"))
             {
-                Console.WriteLine(node.CssSelect(".title-list-row__column-header").CssSelect(".header-title").FirstOrDefault().InnerText.Trim());
-                Console.WriteLine(node.CssSelect(".title-list-row__column-header").CssSelect(".header-year").FirstOrDefault().InnerText.Trim());
+                //Console.WriteLine(node.CssSelect(".title-list-row__column-header").CssSelect(".header-title").FirstOrDefault().InnerText.Trim());
+                //Console.WriteLine(node.CssSelect(".title-list-row__column-header").CssSelect(".header-year").FirstOrDefault().InnerText.Trim());
                 if (node.CssSelect(".title-list-row__column-header").CssSelect(".header-title").FirstOrDefault().InnerText.Trim() == movieToSearch || node.CssSelect(".title-list-row__column-header").CssSelect(".header-year").FirstOrDefault().InnerText.Trim() == newDate)
                 {
                     var estoyCansado = node.CssSelect(".title-list-row__column-header").FirstOrDefault().GetAttributeValue("href", null); //.title-list-row__column-header //.GetAttributeValue("href",null)
@@ -326,7 +345,7 @@ namespace lastOne
                             if (noStreaming != null)
                             {
                                 whereToWatch whereToWatch = new whereToWatch(movieToSearch + " no está disponible para streaming.", "", "", "");
-                                Console.WriteLine(movieToSearch + " no está disponible para streaming.");
+                                //Console.WriteLine(movieToSearch + " no está disponible para streaming.");
                                 temp.Add(whereToWatch);
                                 movies[index].whereToWatch = temp;
                                 return;
@@ -341,7 +360,7 @@ namespace lastOne
                                     string precio = nodeNose.CssSelect(".offer__label").CssSelect("span").FirstOrDefault().InnerText.Trim();
                                     string info = nodeNose.CssSelect(".buybox-row__label").FirstOrDefault().InnerText.Trim();
                                     whereToWatch whereToWatch = new whereToWatch(nombre, photo, precio, info);
-                                    Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
+                                    //Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
                                     temp.Add(whereToWatch);
                                 }
                                 movies[index].whereToWatch = temp;
@@ -371,12 +390,12 @@ namespace lastOne
 
                                 string info = node2.CssSelect(".offer__presentation__info").FirstOrDefault().InnerText.Trim();
                                 whereToWatch whereToWatch = new whereToWatch(nombre, foto, precio, info);
-                                Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
+                                //Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
                                 temp.Add(whereToWatch);
                             }
                             catch (Exception ex)
                             {
-                                Console.WriteLine("La tipica: " + ex);
+                                Console.WriteLine("Este error no significa nada tranki...");
                             }
 
                         }
@@ -385,7 +404,7 @@ namespace lastOne
                         if (temp.Count == 0)
                         {
                             whereToWatch whereToWatch = new whereToWatch(movieToSearch + " no está disponible para streaming.", "", "", "");
-                            Console.WriteLine(movieToSearch + " no está disponible para streaming.");
+                            //Console.WriteLine(movieToSearch + " no está disponible para streaming.");
                             temp.Add(whereToWatch);
                             movies[index].whereToWatch = temp;
                             return;
@@ -405,7 +424,7 @@ namespace lastOne
                             if (noStreaming != null)
                             {
                                 whereToWatch whereToWatch = new whereToWatch(movieToSearch + " no está disponible para streaming.", "", "", "");
-                                Console.WriteLine(movieToSearch + " no está disponible para streaming.");
+                                //Console.WriteLine(movieToSearch + " no está disponible para streaming.");
                                 temp.Add(whereToWatch);
                                 series[index].whereToWatch = temp;
                                 return;
@@ -420,7 +439,7 @@ namespace lastOne
                                     string precio = nodeNose.CssSelect(".offer__label").CssSelect("span").FirstOrDefault().InnerText.Trim();
                                     string info = nodeNose.CssSelect(".buybox-row__label").FirstOrDefault().InnerText.Trim();
                                     whereToWatch whereToWatch = new whereToWatch(nombre, photo, precio, info);
-                                    Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
+                                    //Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
                                     temp.Add(whereToWatch);
                                 }
                                 series[index].whereToWatch = temp;
@@ -433,30 +452,36 @@ namespace lastOne
                         HtmlNode otroNode = moviePa.DocumentNode.CssSelect(".buybox-container").FirstOrDefault();
                         foreach (var node2 in otroNode.CssSelect(".offer-container"))
                         {
-                            string nombre = node2.CssSelect(".content-wrapper").CssSelect("img").FirstOrDefault().GetAttributeValue("title", null);
-                            string foto = node2.CssSelect(".content-wrapper").CssSelect("img").FirstOrDefault().GetAttributeValue("src", null);
-                            string precio = "";
-                            if (node2.CssSelect(".offer__label__price").CssSelect("span").FirstOrDefault() == null)
+                            try
                             {
-                                precio = "Gratis";
-                            }
-                            else
-                            {
-                                precio = node2.CssSelect(".offer__label__price").CssSelect("span").FirstOrDefault().InnerText.Trim();
-                            }
+                                string nombre = node2.CssSelect(".content-wrapper").CssSelect("img").FirstOrDefault().GetAttributeValue("title", null);
+                                string foto = node2.CssSelect(".content-wrapper").CssSelect("img").FirstOrDefault().GetAttributeValue("src", null);
+                                string precio = "";
+                                if (node2.CssSelect(".offer__label__price").CssSelect("span").FirstOrDefault() == null)
+                                {
+                                    precio = "Gratis";
+                                }
+                                else
+                                {
+                                    precio = node2.CssSelect(".offer__label__price").CssSelect("span").FirstOrDefault().InnerText.Trim();
+                                }
 
-                            string info = node2.CssSelect(".offer__presentation__info").FirstOrDefault().InnerText.Trim();
-                            whereToWatch whereToWatch = new whereToWatch(nombre, foto, precio, info);
-                            Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
-                            temp.Add(whereToWatch);
+                                string info = node2.CssSelect(".offer__presentation__info").FirstOrDefault().InnerText.Trim();
+                                whereToWatch whereToWatch = new whereToWatch(nombre, foto, precio, info);
+                                //Console.WriteLine("Datos where to watch: " + nombre + ", " + precio + ", " + info);
+                                temp.Add(whereToWatch);
+                            }
+                            catch(Exception ex)
+                            {
+                                Console.WriteLine("Este error no significa nada tranki...");
+                            }
                         }
-
 
                         //Si temp vacia
                         if (temp.Count == 0)
                         {
                             whereToWatch whereToWatch = new whereToWatch(movieToSearch + " no está disponible para streaming.", "", "", "");
-                            Console.WriteLine(movieToSearch + " no está disponible para streaming.");
+                            //Console.WriteLine(movieToSearch + " no está disponible para streaming.");
                             temp.Add(whereToWatch);
                             series[index].whereToWatch = temp;
                             return;

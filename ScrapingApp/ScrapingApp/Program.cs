@@ -8,7 +8,7 @@ namespace lastOne
     {
         static void Main(string[] args)
         {
-            WebScraping webScraping = new WebScraping();
+            WebScraping webScraping = new WebScraping();   
         }
     }
 }
