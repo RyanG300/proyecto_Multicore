@@ -114,7 +114,7 @@ namespace lastOne
         public void ejecutar(int catidadDatos)
         {
             //catidadPage -> 24 pelis/series por pagina
-            int cantidadPage = ((catidadDatos / 24)+5);
+            int cantidadPage = ((catidadDatos / 24) + 5 != 0)? ((catidadDatos / 24)+5):1;
             Thread thread1 = new Thread(() => metaCriticScraping(finalPage+1, finalPage + cantidadPage/2, urlMovies));
             Thread thread1_2 = new Thread(() => metaCriticScraping((finalPage + cantidadPage/2)+1, finalPage + cantidadPage, urlMovies)); 
             Thread Thread2 = new Thread(() => metaCriticScraping(finalPage+1, finalPage + cantidadPage/2, urlSeries));
